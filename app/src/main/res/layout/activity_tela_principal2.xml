@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txv_bemVindo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qual será nossa aventura hoje?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ImageView
+        android:id="@+id/img_mochila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/icon_bp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_novo_person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/darkgray"
+            android:text="Novo Personagem"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_ficha_completa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/darkgray"
+            android:text="Ficha Completa"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_rolar_dados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/darkgray"
+            android:text="Rolar Dados"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_mochila"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/darkgray"
+            android:text="Mochila"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
