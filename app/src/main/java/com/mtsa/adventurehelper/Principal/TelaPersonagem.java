@@ -1,7 +1,9 @@
-package com.mtsa.adventurehelper;
+package com.mtsa.adventurehelper.Principal;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.mtsa.adventurehelper.R;
 
 public class TelaPersonagem extends AppCompatActivity {
 

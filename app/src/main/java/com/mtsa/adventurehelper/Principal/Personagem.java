@@ -1,4 +1,4 @@
-package com.mtsa.adventurehelper;
+package com.mtsa.adventurehelper.Principal;
 
 /**
  * Created by mathe on 20/04/2017.
@@ -6,18 +6,18 @@ package com.mtsa.adventurehelper;
 
 public class Personagem {
 
-    String idPersonagem;
-    String nome;
-    String classe;
-    String raca;
-    String lvl;
+    private String idPersonagem;
+    private String nome;
+    private String classe;
+    private String raca;
+    private String lvl;
 
-    String FORCA;
-    String DESTREZA;
-    String CONTITUICAO;
-    String INTELIGENCIA;
-    String SABEDORIA;
-    String CARISMA;
+    private String FORCA;
+    private String DESTREZA;
+    private String CONTITUICAO;
+    private String INTELIGENCIA;
+    private String SABEDORIA;
+    private String CARISMA;
 
 
     //Getters e Setters

@@ -1,4 +1,4 @@
-package com.mtsa.adventurehelper;
+package com.mtsa.adventurehelper.Principal;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.mtsa.adventurehelper.R;
 
 public class TelaPrincipal extends AppCompatActivity implements View.OnClickListener{
 
@@ -17,7 +19,7 @@ public class TelaPrincipal extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_principal2);
+        setContentView(R.layout.activity_tela_principal);
 
         bt_NovoPerson = (Button) findViewById(R.id.bt_novo_person);
         bt_FichaCompleta = (Button) findViewById(R.id.bt_ficha_completa);
@@ -34,11 +36,12 @@ public class TelaPrincipal extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.bt_novo_person:
-                startActivity(new Intent(TelaPrincipal.this, EditarFicha.class));
+                startActivity(new Intent(TelaPrincipal.this, CriarPersonagem.class));
                 break;
 
             case R.id.bt_ficha_completa:
-                startActivity(new Intent(TelaPrincipal.this, FichaCompleta.class));
+                Toast.makeText(getApplicationContext(), "Implementação Futura!", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(TelaPrincipal.this, FichaCompleta.class));
                 break;
 
             case R.id.bt_rolar_dados:

@@ -1,4 +1,4 @@
-package com.mtsa.adventurehelper;
+package com.mtsa.adventurehelper.Principal;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.mtsa.adventurehelper.R;
 
 import java.util.ArrayList;
 

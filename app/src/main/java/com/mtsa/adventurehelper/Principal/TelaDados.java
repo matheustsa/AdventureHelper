@@ -1,4 +1,4 @@
-package com.mtsa.adventurehelper;
+package com.mtsa.adventurehelper.Principal;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.mtsa.adventurehelper.R;
 
 import org.w3c.dom.Text;
 

@@ -1,10 +1,12 @@
-package com.mtsa.adventurehelper;
+package com.mtsa.adventurehelper.Principal;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.mtsa.adventurehelper.R;
 
 public class FichaCompleta extends AppCompatActivity {
 

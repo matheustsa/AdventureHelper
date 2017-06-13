@@ -1,4 +1,4 @@
-package com.mtsa.adventurehelper;
+package com.mtsa.adventurehelper.Principal;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.mtsa.adventurehelper.R;
 
 public class EditarFicha extends AppCompatActivity {
 
@@ -58,7 +60,7 @@ public class EditarFicha extends AppCompatActivity {
         edtx_pv = (EditText) findViewById(R.id.editText_pontosdevida);
         edtx_lvl = (EditText) findViewById(R.id.editText_lvl);
 
-        edtx_nome.setText(ShaPrefs.getString(NOME, ""));
+        edtx_nome.setText(ShaPrefs.getString(NOME, "")); //Pega o valor em NOME, senão o default, nesse caso "";
         edtx_raca.setText(ShaPrefs.getString(RACA, ""));
         edtx_classe.setText(ShaPrefs.getString(CLASSE, ""));
         edtx_pv.setText(ShaPrefs.getString(PV, ""));
