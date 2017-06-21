@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:id="@+id/layout_telaPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
 
     <TextView
         android:id="@+id/txv_bemVindo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:text="Qual será nossa aventura hoje?"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/clay" />
 
     <ImageView
         android:id="@+id/img_mochila"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_margin="35dp"
         android:adjustViewBounds="false"
         android:cropToPadding="false"
         app:srcCompat="@drawable/icon_bp" />
@@ -34,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/darkgray"
+            android:backgroundTint="@color/clay"
             android:text="Novo Personagem"
             android:textColor="@color/white" />
 
@@ -43,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/darkgray"
+            android:backgroundTint="@color/clay"
             android:text="Ficha Completa"
             android:textColor="@color/white" />
     </LinearLayout>
@@ -58,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/darkgray"
+            android:backgroundTint="@color/clay"
             android:text="Rolar Dados"
             android:textColor="@color/white" />
 
@@ -67,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/darkgray"
+            android:backgroundTint="@color/clay"
             android:text="Mochila"
             android:textColor="@color/white" />
     </LinearLayout>

@@ -5,16 +5,18 @@
     <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS"/> -->
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_compass2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon_compass2"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Desert">
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/SplashTheme">
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -23,7 +25,6 @@
         <activity android:name=".TelaDados" />
         <activity android:name=".TelaListaPersonagens" />
         <activity android:name=".TelaPersonagem" />
-        <activity android:name=".EditarFicha" />
         <activity android:name=".FichaCompleta" />
         <activity android:name=".CriarPersonagem_Raca" />
         <activity android:name=".CriarPersonagem_Classe" />

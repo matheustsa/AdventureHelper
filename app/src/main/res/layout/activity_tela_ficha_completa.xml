@@ -2,33 +2,30 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
 
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ficha de Personagem"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Resumo da Ficha"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textSize="36sp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txv_ficha_nome"
@@ -54,29 +51,6 @@
         app:layout_constraintTop_toTopOf="@+id/txv_ficha_nome" />
 
     <TextView
-        android:id="@+id/txv_ficha_pv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="0dp"
-        android:text="PV:"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintRight_toLeftOf="@+id/txv_ficha_pvPersonagem"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_nomePersonagem" />
-
-    <TextView
-        android:id="@+id/txv_ficha_pvPersonagem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="0dp"
-        android:text="TXV"
-        android:textSize="24sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_pv" />
-
-    <TextView
         android:id="@+id/txv_ficha_raca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -100,52 +74,27 @@
         app:layout_constraintTop_toTopOf="@+id/txv_ficha_raca" />
 
     <TextView
-        android:id="@+id/txv_ficha_lvl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="8dp"
-        android:text="LVL:"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="@+id/txv_ficha_pv"
-        app:layout_constraintTop_toBottomOf="@+id/txv_ficha_pv" />
-
-    <TextView
-        android:id="@+id/txv_ficha_lvlPersonagem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="6dp"
-        android:layout_marginTop="0dp"
-        android:text="TXV"
-        android:textSize="24sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_lvl"
-        app:layout_constraintLeft_toRightOf="@+id/txv_ficha_lvl"
-        android:layout_marginLeft="0dp" />
-
-    <TextView
         android:id="@+id/txv_ficha_ca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
         android:text="CA:"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="@+id/txv_ficha_lvl"
-        app:layout_constraintTop_toBottomOf="@+id/txv_ficha_lvl" />
+        app:layout_constraintRight_toLeftOf="@+id/txv_ficha_caPersonagem"
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_racaPersonagem" />
 
     <TextView
         android:id="@+id/txv_ficha_caPersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="0dp"
         android:text="TXV"
         android:textSize="24sp"
-        android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_ca"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_ca" />
 
     <TextView
         android:id="@+id/txv_ficha_classe"
@@ -163,12 +112,12 @@
         android:id="@+id/txv_ficha_classePersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
         android:text="TextView"
         android:textSize="24sp"
         app:layout_constraintLeft_toRightOf="@+id/txv_ficha_classe"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_classe"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_classe" />
 
     <TextView
         android:id="@+id/txv_ficha_atributos"
@@ -197,12 +146,12 @@
         android:id="@+id/txv_ficha_forcaPersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
         android:text="TXV"
         android:textSize="24sp"
         app:layout_constraintLeft_toRightOf="@+id/txv_ficha_forca"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_forca"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_forca" />
 
     <TextView
         android:id="@+id/txv_ficha_destreza"
@@ -220,12 +169,12 @@
         android:id="@+id/txv_ficha_destrezaPersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
         android:text="TXV"
         android:textSize="24sp"
         app:layout_constraintLeft_toRightOf="@+id/txv_ficha_destreza"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_destreza"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_destreza" />
 
     <TextView
         android:id="@+id/txv_ficha_constituicao"
@@ -243,12 +192,12 @@
         android:id="@+id/txv_ficha_constituicaoPersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
         android:text="TXV"
         android:textSize="24sp"
         app:layout_constraintLeft_toRightOf="@+id/txv_ficha_constituicao"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_constituicao"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_constituicao" />
 
     <TextView
         android:id="@+id/txv_ficha_inteligencia"
@@ -266,12 +215,12 @@
         android:id="@+id/txv_ficha_inteligenciaPersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
         android:text="TXV"
         android:textSize="24sp"
         app:layout_constraintLeft_toRightOf="@+id/txv_ficha_inteligencia"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_inteligencia"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_inteligencia" />
 
     <TextView
         android:id="@+id/txv_ficha_sabedoria"
@@ -289,12 +238,12 @@
         android:id="@+id/txv_ficha_sabedoriaPersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
         android:text="TXV"
         android:textSize="24sp"
         app:layout_constraintLeft_toRightOf="@+id/txv_ficha_sabedoria"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_sabedoria"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_sabedoria" />
 
     <TextView
         android:id="@+id/txv_ficha_carisma"
@@ -312,12 +261,12 @@
         android:id="@+id/txv_ficha_carismaPersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
         android:text="TXV"
         android:textSize="24sp"
         app:layout_constraintLeft_toRightOf="@+id/txv_ficha_carisma"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_carisma"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_carisma" />
 
     <TextView
         android:id="@+id/txv_ficha_fortitude"
@@ -335,12 +284,12 @@
         android:id="@+id/txv_ficha_fortitudePersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
         android:text="TXV"
         android:textSize="24sp"
         app:layout_constraintLeft_toRightOf="@+id/txv_ficha_fortitude"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_fortitude"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_fortitude" />
 
     <TextView
         android:id="@+id/txv_ficha_reflexos"
@@ -358,11 +307,11 @@
         android:id="@+id/txv_ficha_reflexosPersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
         android:text="TXV"
         android:textSize="24sp"
-        android:layout_marginLeft="0dp"
         app:layout_constraintLeft_toLeftOf="@+id/txv_ficha_fortitudePersonagem"
-        android:layout_marginTop="0dp"
         app:layout_constraintTop_toTopOf="@+id/txv_ficha_reflexos" />
 
     <TextView
@@ -381,12 +330,12 @@
         android:id="@+id/txv_ficha_vontadePersonagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
         android:text="TXV"
         android:textSize="24sp"
-        android:layout_marginLeft="0dp"
         app:layout_constraintLeft_toLeftOf="@+id/txv_ficha_reflexosPersonagem"
-        app:layout_constraintTop_toTopOf="@+id/txv_ficha_vontade"
-        android:layout_marginTop="0dp" />
+        app:layout_constraintTop_toTopOf="@+id/txv_ficha_vontade" />
 </android.support.constraint.ConstraintLayout>
 
 </ScrollView>

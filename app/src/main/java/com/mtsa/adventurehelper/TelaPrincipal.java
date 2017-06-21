@@ -14,6 +14,7 @@ public class TelaPrincipal extends AppCompatActivity implements View.OnClickList
     Button bt_RolarDados = null;
     Button bt_Mochila = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,8 +40,7 @@ public class TelaPrincipal extends AppCompatActivity implements View.OnClickList
                 break;
 
             case R.id.bt_ficha_completa:
-                Toast.makeText(getApplicationContext(), "Implementação Futura!", Toast.LENGTH_SHORT).show();
-//                startActivity(new Intent(TelaPrincipal.this, FichaCompleta.class));
+                startActivity(new Intent(TelaPrincipal.this, FichaCompleta.class));
                 break;
 
             case R.id.bt_rolar_dados:

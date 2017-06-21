@@ -3,8 +3,8 @@ package com.mtsa.adventurehelper;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -36,13 +36,11 @@ public class CriarPersonagem_Raca extends AppCompatActivity implements View.OnCl
     SharedPreferences ShaPrefs;
 
     Spinner spin_raca;
+    Button bt_avancar;
     private ImageView img_raca;
     private TextSwitcher txtsw_desc_raca;
-
     private TextView txv_bonusRacialPosit;
     private TextView txv_bonusRacialNegat;
-
-    Button bt_avancar;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,12 +106,12 @@ public class CriarPersonagem_Raca extends AppCompatActivity implements View.OnCl
                 SPEditor.apply();
                 /*
                 System.out.println("\n\n-----------------------\n"
-                        +"\nRACA "+ShaPrefs.getString(RACA,"")
-                        +"\nFOR "+ShaPrefs.getInt(BONUS_FOR, 0)
-                        +"\nDES "+ShaPrefs.getInt(BONUS_DES, 0)
-                        +"\nCON "+ShaPrefs.getInt(BONUS_CON, 0)
-                        +"\nINT "+ShaPrefs.getInt(BONUS_INT, 0)
-                        +"\nCAR "+ShaPrefs.getInt(BONUS_CAR, 0)
+                        +"\nRACA "+sp.getString(RACA,"")
+                        +"\nFOR "+sp.getInt(BONUS_FOR, 0)
+                        +"\nDES "+sp.getInt(BONUS_DES, 0)
+                        +"\nCON "+sp.getInt(BONUS_CON, 0)
+                        +"\nINT "+sp.getInt(BONUS_INT, 0)
+                        +"\nCAR "+sp.getInt(BONUS_CAR, 0)
                         +"\n-------------------------------\n\n");
                 */
                 startActivity(new Intent(this, CriarPersonagem_Classe.class));
@@ -140,7 +138,7 @@ public class CriarPersonagem_Raca extends AppCompatActivity implements View.OnCl
                 constituicao = 2;
                 carisma = -2;
                 //-----------------------------
-                img_raca.setImageResource(R.drawable.ret_jax);
+                img_raca.setImageResource(R.drawable.anao);
                 txtsw_desc_raca.setText(racasDB.getDESCRICAO(new String[]{"Anão"}));
                 txv_bonusRacialPosit.setText("+2 de Constituição");
                 txv_bonusRacialNegat.setText("-2 de Carisma");
@@ -152,7 +150,7 @@ public class CriarPersonagem_Raca extends AppCompatActivity implements View.OnCl
                 destreza = 2;
                 constituicao = -2;
                 //-----------------------------
-                img_raca.setImageResource(R.drawable.ret_mor);
+                img_raca.setImageResource(R.drawable.elfo);
                 txtsw_desc_raca.setText(racasDB.getDESCRICAO(new String[]{"Elfo"}));
                 txv_bonusRacialPosit.setText("+2 de Destreza");
                 txv_bonusRacialNegat.setText("-2 de Constituição");
@@ -164,7 +162,7 @@ public class CriarPersonagem_Raca extends AppCompatActivity implements View.OnCl
                 constituicao = 2;
                 forca = -2;
                 //-----------------------------
-                img_raca.setImageResource(R.drawable.ret_ken);
+                img_raca.setImageResource(R.drawable.gnomo);
                 txtsw_desc_raca.setText(racasDB.getDESCRICAO(new String[]{"Gnomo"}));
                 txv_bonusRacialPosit.setText("+2 de Constituição");
                 txv_bonusRacialNegat.setText("-2 de Força");
@@ -176,7 +174,7 @@ public class CriarPersonagem_Raca extends AppCompatActivity implements View.OnCl
                 constituicao = 2;
                 forca = -2;
                 //-----------------------------
-                img_raca.setImageResource(R.drawable.ret_lulu);
+                img_raca.setImageResource(R.drawable.halfling);
                 txtsw_desc_raca.setText(racasDB.getDESCRICAO(new String[]{"Halfling"}));
                 txv_bonusRacialPosit.setText("+2 de Constituição");
                 txv_bonusRacialNegat.setText("-2 de Força");
@@ -186,7 +184,7 @@ public class CriarPersonagem_Raca extends AppCompatActivity implements View.OnCl
                 // Atributos individuais da raca
                 raca = "Humano";
                 //-----------------------------
-                img_raca.setImageResource(R.drawable.ret_lee);
+                img_raca.setImageResource(R.drawable.human);
                 txtsw_desc_raca.setText(racasDB.getDESCRICAO(new String[]{"Humano"}));
                 txv_bonusRacialPosit.setText("(nenhum)");
                 txv_bonusRacialNegat.setText("(nenhum)");
@@ -196,7 +194,7 @@ public class CriarPersonagem_Raca extends AppCompatActivity implements View.OnCl
                 // Atributos individuais da raca
                 raca = "Meio-Elfo";
                 //-----------------------------
-                img_raca.setImageResource(R.drawable.ret_lux);
+                img_raca.setImageResource(R.drawable.meioelfo);
                 txtsw_desc_raca.setText(racasDB.getDESCRICAO(new String[]{"Meio-Elfo"}));
                 txv_bonusRacialPosit.setText("(nenhum)");
                 txv_bonusRacialNegat.setText("(nenhum)");
@@ -209,7 +207,7 @@ public class CriarPersonagem_Raca extends AppCompatActivity implements View.OnCl
                 inteligencia = -2;
                 carisma = -2;
                 //-----------------------------
-                img_raca.setImageResource(R.drawable.ret_nas);
+                img_raca.setImageResource(R.drawable.meioorc);
                 txtsw_desc_raca.setText(racasDB.getDESCRICAO(new String[]{"Meio-Orc"}));
                 txv_bonusRacialPosit.setText("+2 de Força");
                 txv_bonusRacialNegat.setText("-2 de Inteligência, -2 de Carisma");

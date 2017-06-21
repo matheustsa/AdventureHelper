@@ -18,6 +18,11 @@
     <item name="darkgray" type="color">#333333</item>
     <item name="black" type="color">#000000</item>
     <item name="white" type="color">#ffffff</item>
+    <item name="papper" type="color">#f4ecca</item>
+    <item name="cooper" type="color">#b69e39</item>
+    <item name="darkcooper" type="color">#856f10</item>
+    <item name="clay" type="color">#453907</item>
+    <item name="wood" type="color">#221d05</item>
 
     <integer-array name="androidcolors">
         <item>@color/colorPrimary</item>
@@ -36,6 +41,11 @@
         <item>@color/darkgray</item>
         <item>@color/black</item>
         <item>@color/white</item>
+        <item>@color/papper</item>
+        <item>@color/cooper</item>
+        <item>@color/darkcooper</item>
+        <item>@color/clay</item>
+        <item>@color/wood</item>
     </integer-array>
 
 </resources>
