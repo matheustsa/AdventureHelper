@@ -1,7 +1,7 @@
-package com.mtsa.adventurehelper;
+package com.mtsa.adventurehelper.desenvolvimento;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.mtsa.adventurehelper.R;
 

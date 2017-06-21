@@ -23,8 +23,8 @@
         </activity>
         <activity android:name=".TelaPrincipal" />
         <activity android:name=".TelaDados" />
-        <activity android:name=".TelaListaPersonagens" />
-        <activity android:name=".TelaPersonagem" />
+        <activity android:name=".desenvolvimento.TelaListaPersonagens" />
+        <activity android:name=".desenvolvimento.TelaPersonagem" />
         <activity android:name=".FichaCompleta" />
         <activity android:name=".CriarPersonagem_Raca" />
         <activity android:name=".CriarPersonagem_Classe" />
