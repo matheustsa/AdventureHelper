@@ -1,4 +1,4 @@
-package com.mtsa.adventurehelper.Principal;
+package com.mtsa.adventurehelper;
 
 import android.content.Context;
 import android.content.SharedPreferences;

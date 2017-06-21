@@ -1,18 +1,14 @@
-package com.mtsa.adventurehelper.Principal;
+package com.mtsa.adventurehelper;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.mtsa.adventurehelper.R;
-
-import org.w3c.dom.Text;
 
 import java.util.Random;
 

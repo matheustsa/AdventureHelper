@@ -1,4 +1,4 @@
-package com.mtsa.adventurehelper.Principal;
+package com.mtsa.adventurehelper;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
-import com.mtsa.adventurehelper.R;
 
 public class TelaPrincipal extends AppCompatActivity implements View.OnClickListener{
 
@@ -30,13 +28,14 @@ public class TelaPrincipal extends AppCompatActivity implements View.OnClickList
         bt_FichaCompleta.setOnClickListener(this);
         bt_RolarDados.setOnClickListener(this);
         bt_Mochila.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.bt_novo_person:
-                startActivity(new Intent(TelaPrincipal.this, CriarPersonagem.class));
+                startActivity(new Intent(TelaPrincipal.this, CriarPersonagem_Raca.class));
                 break;
 
             case R.id.bt_ficha_completa:

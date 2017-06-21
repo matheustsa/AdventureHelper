@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AdventureHelper</string>
+    <string name="dialog_alerta_livro">Este aplicativo não substitui o uso dos livros. Para uma melhor experiênia, tenha em mãos o "Livro do Jogador", para um conteúdo mais detalhado.</string>
 </resources>

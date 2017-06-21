@@ -1,4 +1,4 @@
-package com.mtsa.adventurehelper.Principal;
+package com.mtsa.adventurehelper;
 
 /**
  * Created by mathe on 05/04/2017.
